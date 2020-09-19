@@ -21,8 +21,8 @@ $(function () {
     //終了時刻がないイベントの表示間隔
     defaultTimedEventDuration: '03:00:00',
     buttonText: {
-        prev: '前',
-        next: '次',
+        prev: '前月',
+        next: '次月',
         prevYear: '前年',
         nextYear: '翌年',
         today: '今日',
@@ -76,16 +76,6 @@ $(function () {
               },
               //終了時刻がないイベントの表示間隔
               defaultTimedEventDuration: '03:00:00',
-              buttonText: {
-                  prev: '前',
-                  next: '次',
-                  prevYear: '前年',
-                  nextYear: '翌年',
-                  today: '今日',
-                  month: '月',
-                  week: '週',
-                  day: '日'
-              },
               // Drag & Drop & Resize
               editable: true,
               //イベントの時間表示を２４時間に
