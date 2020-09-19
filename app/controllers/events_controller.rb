@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
+  before_action :move_to_index, except: [:index, :show, :edit, :new]
 
   # GET /events
   # GET /events.json
@@ -69,6 +70,12 @@ class EventsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def event_params
-      params.require(:event).permit(:title, :body, :start_date, :end_date)
+      params.require(:event).permit(:title, :body, :start_date, :end_date).merge(user_id: current_user.id)
+    end
+
+    def move_to_index
+      unless user_signed_in?
+        redirect_to "/users/sign_up"
+      end
     end
 end
