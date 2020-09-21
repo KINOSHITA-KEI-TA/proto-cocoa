@@ -2,9 +2,29 @@
   width: 980px;
   margin: 60px auto;
   padding: 60px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: rgb(229, 249, 247);
+  border: 3px solid blue;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
+}
+.AccountPage__title{
+  border: solid 2px blue;
+  background-color: #fff;
+  width: 30vw;
+  height: 20vh;
+  .User-title{
+    color: blue;
+    font-size: 30px;
+    margin: 10px 10px 10px 20px;
+  }
+  .Sub-title{
+    font-weight: bold;
+    margin: 20px 10px 10px 20px;
+    font-size: 20px;
+  }
+}
+.Button{
+  margin: 0px 10px 10px 20px;
+  font-size: 20px;
 }

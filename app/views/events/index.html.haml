@@ -1,9 +1,8 @@
 %h1 CoCoA
--# = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
 
 #calendar
 
-%h2 スケジュールリスト
+%h2.List スケジュールリスト
 %table
   %thead
     %tr
@@ -22,10 +21,11 @@
         %td= event.body
         %td= event.start_date
         %td= event.end_date
-        %td= link_to 'Show', event
-        %td= link_to 'Edit', edit_event_path(event)
-        %td= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to 'くわしく', event
+        %td= link_to '変更', edit_event_path(event)
+        %td= link_to '削除', event, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
 = link_to 'スケジュールの追加（ついか）', new_event_path
+= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
