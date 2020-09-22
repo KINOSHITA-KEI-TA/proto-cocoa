@@ -15,16 +15,49 @@
   height: 20vh;
   .User-title{
     color: blue;
-    font-size: 30px;
-    margin: 10px 10px 10px 20px;
+    font-size: 35px;
+    margin: 15px 10px 10px 20px;
   }
   .Sub-title{
     font-weight: bold;
     margin: 20px 10px 10px 20px;
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 .Button{
   margin: 0px 10px 10px 20px;
   font-size: 20px;
+}
+.FormField{
+  &__input--normal{
+    margin: 10px;
+  }
+}
+#user_name{
+  height: 5vh;
+  width: 20vw;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
+}
+#user_email{
+  height: 5vh;
+  width: 20vw;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
+}
+#user_password{
+  height: 5vh;
+  width: 20vw;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
+}
+#user_password_confirmation{
+  height: 5vh;
+  width: 20vw;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
+}
+.UserButton{
+  width: 5vw;
+  margin: 10px 0px 0px 10px;
 }

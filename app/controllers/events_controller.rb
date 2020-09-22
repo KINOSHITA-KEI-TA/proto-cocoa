@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
   before_action :move_to_index, except: [:index, :show, :edit, :new]
-
+  # before_action :correct_user, only: [:new, :index, :show, :edit, :create, :update, :destroy]
   # GET /events
   # GET /events.json
   def index
@@ -10,7 +10,7 @@ class EventsController < ApplicationController
 
   # GET /events/1
   # GET /events/1.json
-  def show
+  def show(user_id: current_user.id)
   end
 
   # GET /events/new
