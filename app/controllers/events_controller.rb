@@ -5,12 +5,16 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
+    # @events = Event.all
+    @events = Event.where(user_id: current_user.id)
+    # where(buyer_id: current_user.id)
+    # @events.all
   end
 
   # GET /events/1
   # GET /events/1.json
-  def show(user_id: current_user.id)
+  def show
+    
   end
 
   # GET /events/new
@@ -78,4 +82,12 @@ class EventsController < ApplicationController
         redirect_to "/users/sign_up"
       end
     end
+
+    def user_params
+      params.require(:user).permit(:name, :email)
+    end
+
+    # def set_user
+    #   @user = User.find(params[:user_id])
+    # end
 end
