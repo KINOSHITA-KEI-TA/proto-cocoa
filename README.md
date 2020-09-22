@@ -1,24 +1,63 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# README
 
-Things you may want to cover:
+Name
+Child-Saving「CoCoA」 app
+====
 
-* Ruby version
+Overview
+子どもと親をつなげるスケジュール管理アプリ。
 
-* System dependencies
+## 概要
+<ul>
+  <li>子ども用スケジュール管理アプリ</li>
+  <li>子どもと親で共有できる（予定）</li>
+  <li>その他実装中</li>
+</ul>
 
-* Configuration
+## 制作意図
+・現代では、SNSが浸透したことで子どもの行動を把握しづらくなってきました。子どもと親の関係も年々希薄になっていると言われています。そうした中で子どもの行動を少しでも共有できるアプリを作りたいと思い制作をはじめました。
 
-* Database creation
 
-* Database initialization
+## 工夫したところ
+<ul>
+  <li>実装中</li>
+</ul>
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## 開発環境
+・Ruby/Ruby on Rails/MySQL/Github/Visual Studio Code/
 
-* Deployment instructions
+## 今後実装したい機能
+<ul>
+  <li>実装中</li>
+</ul>
 
-* ...
+## Licence
+Copyright YOU ARE 2020.
+
+## usersテーブル
+
+Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false,add_index :users, :email, unique: true|
+|password|string|null: false|
+
+### Association
+- has_many :events
+
+
+## Eventsテーブル
+
+Column|Type|Options|
+|------|----|-------|
+|title|string|
+|body|string|
+|start_date|datetime|
+|end_date|datetime|
+|user_id|integer|
+
+### Association
+- belongs_to :user
