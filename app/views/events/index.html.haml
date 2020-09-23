@@ -3,7 +3,7 @@
 #calendar
 
 %h2.List スケジュールリスト
-%table
+%table.List-title
   %thead
     %tr
       %th 【タイトル】
@@ -26,6 +26,8 @@
         %td= link_to '削除', event, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
-
-= link_to 'スケジュールの追加（ついか）', new_event_path
-= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
+.New-box
+  .New-event
+    = link_to 'スケジュールの追加（ついか）', new_event_path, class: 'Button-out'
+  .Out-event
+    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button-out'

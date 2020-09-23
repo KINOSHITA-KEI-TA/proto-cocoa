@@ -1,5 +1,8 @@
+*{
+  box-sizing: border-box;
+}
 body {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   color: #333;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
@@ -81,4 +84,47 @@ div {
 
 label {
   display: block;
+}
+html{
+  background-color:green;
+}
+h1{
+  padding: 20px 10px 10px 20px;
+  font-size: 30px;
+}
+
+.fc-left{
+  padding: 10px 10px 10px 20px;
+}
+.fc-right{
+  padding: 10px 20px 10px 10px;
+}
+.List{
+  padding: 10px;
+}
+.List-box{
+  padding: 20px;
+}
+.New-box{
+  padding: 0px 0px 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  .New-event{
+    border: solid 3px blue;
+    padding: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  .Out-event{
+    border: solid 3px rgb(4, 121, 4);
+    padding: 10px;
+    margin: 0px 20px 0px 0px ;
+    // background-color:  rgb(141, 197, 141);
+  }
+  .Button-out{
+    text-decoration: none;
+  }
+}
+.List-title{
+  margin: 0px 0px 0px 20px;
 }

@@ -7,17 +7,17 @@
           %li= message
 
   .field
-    = f.label :タイトル
-    = f.text_field :title
+    = f.label :タイトル,class:'font'
+    = f.text_field :title,class:'registration-text'
   .field
-    = f.label :ないよう
-    = f.text_field :body
+    = f.label :ないよう,class:'font'
+    = f.text_field :body,class:'registration-text'
   .field
-    = f.label :開始日程
-    = f.datetime_field :start_date, placeholder: "XXXX-XX-XX"
+    = f.label :開始日程,class:'font'
+    = f.datetime_field :start_date, placeholder: "XXXX-XX-XX",class:'registration-text'
   .field
-    = f.label :終了日程
-    = f.datetime_field :end_date, placeholder: "XXXX-XX-XX"
+    = f.label :終了日程,class:'font'
+    = f.datetime_field :end_date, placeholder: "XXXX-XX-XX",class:'registration-text'
   .actions
     = f.submit 'とうろく'
     

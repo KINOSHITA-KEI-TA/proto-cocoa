@@ -1,7 +1,9 @@
+%body.New-registration
+%h1.User-title CoCoA
 %h1 スケジュールの変更（へんこう）
 
 = render 'form'
 
 = link_to 'くわしく', @event
 \|
-= link_to 'もどる', events_path
+= link_to 'もどる', events_path, class: 'Button-out'
