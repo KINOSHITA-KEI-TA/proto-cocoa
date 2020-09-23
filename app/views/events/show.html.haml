@@ -1,16 +1,20 @@
+%body.Show-registration
+%h1.User-title CoCoA
+%h2.Show-title くわしい ないよう
+.Show-list
 %p#notice= notice
 
-%p
-  %b Title:
+%p.show-text
+  %b タイトル:
   = @event.title
-%p
-  %b Body:
+%p.show-text
+  %b ないよう:
   = @event.body
-%p
-  %b Start date:
+%p.show-text
+  %b 開始時間:
   = @event.start_date
-%p
-  %b End date:
+%p.show-text
+  %b 終了時間:
   = @event.end_date
 
 = link_to '変更（へんこう）', edit_event_path(@event)
