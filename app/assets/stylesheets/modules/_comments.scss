@@ -1,0 +1,46 @@
+.Show-body{
+  display: flex;
+}
+
+.Show-title{
+  margin: 10px 0px 10px 0px;
+  font-size: 15px;
+  padding: 0px 0px 0px 10px;
+  color: green;
+}
+.show-text{
+  margin: 20px 0px 20px 20px;
+}
+.Show-registration{
+  width: 40vw;
+  text-align: justify;
+  padding: 20px;
+}
+
+.Comment{
+  padding: 20px 0px;
+  margin: 20px 0px 0px 20px;
+  &__comment-box{
+    display: flex;
+    flex-direction: column;
+    &__comment-answer{
+      border: solid 2px blue;
+      background-color: #ffffff;
+      width: 60%;
+      margin: 20px  0px 20px  20px;
+      padding: 10px 8px 10px 8px;
+      &__answer-box{
+        display: flex;
+        &__answer-name{
+          padding: 0px 8px;
+        }
+      }
+      &__answer-text{
+        height: 100px;
+        margin: 15px 0px ;
+        padding: 18px 8px;
+        border-top: dashed 2px black;
+      }
+    }
+  }
+}
