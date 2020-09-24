@@ -1,5 +1,6 @@
 
 # README
+![CoCoA](https://user-images.githubusercontent.com/67889594/94167360-62ef0500-fec7-11ea-96b2-ae21947b397e.jpg)
 
 Name
 Child-Saving「CoCoA」 app
