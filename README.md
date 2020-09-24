@@ -22,7 +22,7 @@ Overview
 
 ## 工夫したところ
 <ul>
-  <li>実装中</li>
+  <li>使いやすさの徹底</li>
 </ul>
 
 
@@ -47,6 +47,7 @@ Column|Type|Options|
 
 ### Association
 - has_many :events
+- has_many :comments
 
 
 ## Eventsテーブル
@@ -61,3 +62,19 @@ Column|Type|Options|
 
 ### Association
 - belongs_to :user
+- has_many :comments
+
+
+## Commentsテーブル
+
+Column|Type|Options|
+|------|----|-------|
+|name|text|
+|text|text|
+|user_id|integer|
+|event_id|integer|
+
+### Association
+- belongs_to :user
+- belongs_to :event
+
