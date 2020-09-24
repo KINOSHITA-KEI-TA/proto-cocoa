@@ -1,3 +1,4 @@
+%body.Main-index
 %h1 CoCoA
 
 #calendar
@@ -22,8 +23,8 @@
         %td= event.start_date
         %td= event.end_date
         %td= link_to 'くわしく', event
-        %td= link_to '変更', edit_event_path(event)
-        %td= link_to '削除', event, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to 'へんこう', edit_event_path(event)
+        %td= link_to 'さくじょ', event, method: :delete, data: { confirm: '削除（さくじょ）してよろしいですか？' }
 
 %br
 .New-box
