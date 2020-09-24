@@ -1,22 +1,43 @@
-%body.Show-registration
-%h1.User-title CoCoA
-%h2.Show-title [くわしい ないよう]
-.Show-list
-%p#notice= notice
+%body.Show-body
+  .Show-registration
+    %h1.User-title CoCoA
+    %h2.Show-title [くわしい ないよう]
+    .Show-list
+      %p#notice= notice
 
-%p.show-text
-  %b タイトル:
-  = @event.title
-%p.show-text
-  %b ないよう:
-  = @event.body
-%p.show-text
-  %b 開始時間:
-  = @event.start_date
-%p.show-text
-  %b 終了時間:
-  = @event.end_date
+      %p.show-text
+        %b タイトル:
+        = @event.title
+      %p.show-text
+        %b ないよう:
+        = @event.body
+      %p.show-text
+        %b 開始時間:
+        = @event.start_date
+      %p.show-text
+        %b 終了時間:
+        = @event.end_date
 
-= link_to '変更（へんこう）', edit_event_path(@event)
-\|
-= link_to 'もどる', events_path
+      = link_to '変更（へんこう）', edit_event_path(@event)
+      \|
+      = link_to 'もどる', events_path
+
+
+  -# コメント実装
+  .Form-comment
+    = form_with(model:[@event,@comment], html: {class: "Form-c" }, local: true) do |form|
+      .Form-comment__comment-content
+        = form.text_field :name,class:"Form-comment__comment-content__comment-tag"
+        = form.text_area :text,class:"Form-comment__comment-content__comment-tag"
+        = form.submit "書き込む",class:"Form-comment__comment-content__comment-btn"
+  .Comment
+    .Comment__comment-box
+      %h4 【 コメント 】
+      - if @comments
+        - @comments.each do |comment|
+          .Comment__comment-box__comment-answer
+            .Comment__comment-box__comment-answer__answer-box
+              .Comment__comment-box__comment-answer__answer-box__answer-name
+                = comment.name
+            .Comment__comment-box__comment-answer__answer-text
+              = comment.text
