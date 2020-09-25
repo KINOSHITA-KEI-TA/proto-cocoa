@@ -1,5 +1,4 @@
 .Show-body{
-  display: flex;
 }
 
 .Show-title{
@@ -16,6 +15,39 @@
   text-align: justify;
   padding: 20px;
 }
+.Form-main{
+  display: flex;
+  border-top: solid 4px green;
+}
+.Form-comment{
+  margin: 10px;
+  .Form-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+.Form-comment__comment-content{
+  display: flex;
+  flex-direction: column;
+  &__comment-tag{
+    margin: 20px 10px 10px 20px ;
+  }
+  .input-name{
+    width: 30vw;
+    height: 5vh;
+    padding: 0px 10px;
+  }
+  .input-text{
+    width: 40vw;
+    height: 40vh;
+    padding: 10px;
+  }
+  &__comment-btn{
+    margin: 10px 0px 10px 20px;
+    width: 80px;
+  }
+}
 
 .Comment{
   padding: 20px 0px;
@@ -26,7 +58,8 @@
     &__comment-answer{
       border: solid 2px blue;
       background-color: #ffffff;
-      width: 60%;
+      width: 43vw;
+      height: 50vh;
       margin: 20px  0px 20px  20px;
       padding: 10px 8px 10px 8px;
       &__answer-box{
