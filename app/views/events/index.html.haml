@@ -32,3 +32,16 @@
     = link_to 'スケジュールの追加（ついか）', new_event_path, class: 'Button-out'
   .Out-event
     = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button-out'
+.Color-select
+  .row.pt20
+    .col-xs-12
+      .form-group.radio-wrap.text-center
+        %label.label-radio
+          %input#green{name: "radio", type: "radio"}/
+          %span.lever グリーン
+        %label.label-radio
+          %input#red{name: "radio", type: "radio"}/
+          %span.lever レッド
+        %label.label-radio
+          %input#black{name: "radio", type: "radio"}/
+          %span.lever ブラック

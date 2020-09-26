@@ -12,6 +12,8 @@ $(function () {
     titleFormat: 'YYYY年 M月',
     //曜日を日本語表示
     dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
+    dayNames: ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'],
+    allDayText: '終日',
     //ボタンのレイアウト
     header: {
         left: 'month,agendaWeek,agendaDay',
@@ -69,6 +71,7 @@ $(function () {
               //曜日を日本語表示
               dayNamesShort: ['日', '月', '火', '水', '木', '金', '土'],
               //ボタンのレイアウト
+            
               header: {
                   left: '',
                   center: 'title,month,agendaWeek,agendaDay',
@@ -92,5 +95,3 @@ $(function () {
       }
   });
 });
-
-
