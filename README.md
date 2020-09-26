@@ -36,6 +36,8 @@ Overview
 
 ## デモ画像
 ![CoCoA-index](https://user-images.githubusercontent.com/67889594/94344029-4e417700-0057-11eb-8677-f9b2cdad3386.png)
+![CoCoA-comment](https://user-images.githubusercontent.com/67889594/94344107-fc4d2100-0057-11eb-93bd-4d259462c29b.png)
+
 
 ## Licence
 Copyright YOU ARE 2020.
