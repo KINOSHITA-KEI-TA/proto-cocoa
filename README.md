@@ -13,6 +13,8 @@ Overview
 <ul>
   <li>子ども用スケジュール管理アプリ</li>
   <li>子どもと親で共有できる</li>
+  <li>ログイン機能<li>
+  <li>スケジュール登録<li>
   <li>日記機能</li>
 </ul>
 
@@ -25,17 +27,22 @@ Overview
   <li>使いやすさの徹底</li>
 </ul>
 
-
 ## 開発環境
-・Ruby/Ruby on Rails/MySQL/Github/Visual Studio Code/
+・javascript/Ruby/Ruby on Rails/MySQL/Github/Visual Studio Code/
 
 ## 今後実装したい機能
 <ul>
   <li>ユーザーごとの色変更</li>
 </ul>
 
-## デモ画像
+
+## デモ画像①
 ![CoCoA-index](https://user-images.githubusercontent.com/67889594/94344029-4e417700-0057-11eb-8677-f9b2cdad3386.png)
+
+## デモ画像②
+![CoCoA-tt](https://user-images.githubusercontent.com/67889594/94344301-44b90e80-0059-11eb-8a04-b766a9a68916.png)
+
+## デモ画像③
 ![CoCoA-comment](https://user-images.githubusercontent.com/67889594/94344107-fc4d2100-0057-11eb-93bd-4d259462c29b.png)
 
 
