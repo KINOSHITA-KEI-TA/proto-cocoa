@@ -7,13 +7,13 @@ Child-Saving「CoCoA」 app
 ====
 
 Overview
-子どもと親をつなげるスケジュール管理アプリ。
+子どもと親をつなげる連絡帳アプリ。
 
 ## 概要
 <ul>
   <li>子ども用スケジュール管理アプリ</li>
-  <li>子どもと親で共有できる（予定）</li>
-  <li>その他実装中</li>
+  <li>子どもと親で共有できる</li>
+  <li>日記機能</li>
 </ul>
 
 ## 制作意図
@@ -31,8 +31,11 @@ Overview
 
 ## 今後実装したい機能
 <ul>
-  <li>実装中</li>
+  <li>ユーザーごとの色変更</li>
 </ul>
+
+## デモ画像
+![CoCoA-index](https://user-images.githubusercontent.com/67889594/94344029-4e417700-0057-11eb-8677-f9b2cdad3386.png)
 
 ## Licence
 Copyright YOU ARE 2020.
