@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
   def create
     Comment.create(comment_params)
     redirect_to  "/events/#(event.id)"
-    # "/events/#{comment.event.id}"
   end
 
   private
