@@ -43,3 +43,5 @@
                     = comment.name
                 .Comment__comment-box__comment-answer__answer-text
                   = comment.text
+              .Comment__comment-box__answer-delete
+                = link_to 'さくじょ', comment, method: :delete, data: { confirm: '削除（さくじょ）してよろしいですか？' }
