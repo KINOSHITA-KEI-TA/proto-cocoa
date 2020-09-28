@@ -31,7 +31,9 @@
         = form_with(model:[@event,@comment], html: {class: "Form-c" }, local: true) do |form|
           .Form-comment__comment-content
             = form.text_field :name,class:"Form-comment__comment-content__comment-tag input-name", placeholder: "タイトル"
-            = form.collection_select :temperature_id,Temperature.all, :id, :name
+            .Form-comment__comment-content__temperature
+              = form.label :temperature_id,"きょうのたいおん",class:'font'
+              = form.collection_select :temperature_id,Temperature.all, :id, :name,class:"Form-comment__comment-content__temperature__temperature-box"
             = form.text_area :text,class:"Form-comment__comment-content__comment-tag input-text", placeholder: "ないよう"
             = form.submit "書き込む",class:"Form-comment__comment-content__comment-btn"
       .Comment

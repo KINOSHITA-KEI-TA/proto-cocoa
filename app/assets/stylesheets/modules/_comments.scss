@@ -34,6 +34,12 @@
   &__comment-tag{
     margin: 20px 10px 10px 20px ;
   }
+  &__temperature{
+    margin: 0px 0px 0px 20px;
+    .font{
+      font-weight: bold;
+    }
+  }
   .input-name{
     width: 30vw;
     height: 5vh;
@@ -41,8 +47,12 @@
   }
   .input-text{
     width: 40vw;
-    height: 40vh;
+    height: 35vh;
     padding: 10px;
+  }
+  #comment_temperature_id{
+    width: 80px;
+    font-size: 18px;
   }
   &__comment-btn{
     margin: 10px 0px 10px 20px;
