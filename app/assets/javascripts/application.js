@@ -95,3 +95,10 @@ $(function () {
       }
   });
 });
+
+$('#calendar').fullCalendar({
+    height: window.innerHeight - 100, // ①
+    windowResize: function () { // ②
+      $('#calendar').fullCalendar('option', 'height', window.innerHeight - 100);
+    }
+  });
