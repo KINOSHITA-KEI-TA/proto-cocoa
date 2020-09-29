@@ -28,7 +28,7 @@
     .Form-main
       .Form-comment
         %h4.Form-title 【 日記 】
-        = form_with(model:[@event,@comment], html: {class: "Form-c" }, local: true) do |form|
+        = form_with(model:[@event,@comment], html: {id: "Form-c" }, local: true) do |form|
           .Form-comment__comment-content
             = form.text_field :name,class:"Form-comment__comment-content__comment-tag input-name", placeholder: "タイトル"
             .Form-comment__comment-content__temperature
@@ -44,6 +44,11 @@
                 .Comment__comment-box__comment-answer__answer-box
                   .Comment__comment-box__comment-answer__answer-box__answer-name
                     = comment.name
+                  .Comment__comment-box__comment-answer__answer-box__answer-temperature
+                    - if comment.temperature_id >= 26
+                      【 たいおん：× 】
+                    - else
+                      【 たいおん：◎ 】
                 .Comment__comment-box__comment-answer__answer-text
                   = comment.text
               .Comment__comment-box__answer-delete

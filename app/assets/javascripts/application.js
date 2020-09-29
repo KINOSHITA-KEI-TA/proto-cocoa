@@ -44,7 +44,19 @@ $(function () {
     navLinks: true,
     selectable: true,
     selectHelper: true,
+
+    
 });
+
+// $(function(){
+//     $('#Form-c').on('submit', function(e){
+//     if ( comment.temperature_id >= 26 ) {
+//         ('fc-day-grid-event(@event)').insertAdjacentHTML('<span>▲</span>');
+//     } else {
+//         ('fc-day-grid-event(@event)').insertAdjacentHTML('<span>◎</span>');
+//     }
+//     })
+// })
 
 
 

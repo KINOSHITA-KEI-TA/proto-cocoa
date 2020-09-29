@@ -82,12 +82,14 @@ Column|Type|Options|
 
 Column|Type|Options|
 |------|----|-------|
-|name|text|
-|text|text|
+|name|text|null: false|
+|text|text|null: false|
+|temperature_id|references|null: false, foreign_key: true|
 |user_id|integer|
 |event_id|integer|
 
 ### Association
 - belongs_to :user
 - belongs_to :event
+- belongs_to_active_hash :temperature
 

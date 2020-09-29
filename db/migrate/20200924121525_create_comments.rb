@@ -4,7 +4,7 @@ class CreateComments < ActiveRecord::Migration[6.0]
       t.integer :user_id
       t.integer :event_id
       t.text :name,null: false
-      t.integer :temperature_id, null: false
+      t.integer :temperature_id
       t.text :text,null: false
       t.timestamps
     end
