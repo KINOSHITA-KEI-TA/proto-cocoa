@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_09_24_121525) do
     t.integer "user_id"
     t.integer "event_id"
     t.text "name", null: false
-    t.integer "temperature_id", null: false
+    t.integer "temperature_id"
     t.text "text", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
