@@ -20,4 +20,4 @@ class Temperature < ActiveHash::Base
   ]
 end
 include ActiveHash::Associations
-has_many :comments
+belongs_to :comment

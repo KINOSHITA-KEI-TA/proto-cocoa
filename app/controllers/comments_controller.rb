@@ -15,6 +15,6 @@ class CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:name,:text).merge(user_id: current_user.id, event_id: params[:event_id])
+    params.require(:comment).permit(:name,:text,:temperature_id).merge(user_id: current_user.id, event_id: params[:event_id])
   end
 end
