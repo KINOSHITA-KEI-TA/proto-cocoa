@@ -38,6 +38,8 @@ $(function () {
     eventColor: '#63ceef',
     //イベントの文字色を変える
     eventTextColor: '#000000',
+    // Drag & Drop & Resize
+    editable: true,
 
     navLinks: true,
     selectable: true,
