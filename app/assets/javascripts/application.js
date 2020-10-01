@@ -116,3 +116,16 @@ $('#calendar').fullCalendar({
       $('#calendar').fullCalendar('option', 'height', window.innerHeight - 100);
     }
   });
+
+  $(function(){
+    $("#green").on('click', function(){
+        $('html').css('background-color', '#228b22').disabled = false;
+    });
+    $("#red").on('click', function(){
+        $('html').css('background-color', '#E83827').disabled = false;
+    });
+    $("#black").on('click', function(){
+        $('html').css('background-color', '#000000').disabled = false;
+    });
+    
+});

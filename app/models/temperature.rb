@@ -19,5 +19,3 @@ class Temperature < ActiveHash::Base
       {id: 49, name: '39.8'}, {id: 50, name: '39.9'}, {id: 51, name: '40.0'},
   ]
 end
-include ActiveHash::Associations
-belongs_to :comment
