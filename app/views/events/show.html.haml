@@ -13,13 +13,13 @@
           %b ないよう:
           = @event.body
         %p.show-text
-          %b 開始時間:
+          %b はじまる日:
           = @event.start_date
         %p.show-text
-          %b 終了時間:
+          %b おわる日:
           = @event.end_date
 
-        = link_to '変更（へんこう）', edit_event_path(@event)
+        = link_to 'スケジュール変更（へんこう）', edit_event_path(@event)
         \|
         = link_to 'もどる', events_path
 
@@ -27,7 +27,12 @@
     -# コメント実装
     .Form-main
       .Form-comment
-        %h4.Form-title 【 日記 】
+        %h4.Form-title
+          【 
+          %ruby
+            日記 
+            %rt にっき
+          】
         = form_with(model:[@event,@comment], html: {id: "Form-c" }, local: true) do |form|
           .Form-comment__comment-content
             = form.text_field :name,class:"Form-comment__comment-content__comment-tag input-name", placeholder: "タイトル"
