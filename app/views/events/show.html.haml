@@ -1,27 +1,30 @@
 %body.Show-body
   .SHow-main
-    .Show-registration
-      %h1.User-title CoCoA
-      %h2.Show-title [くわしい ないよう]
-      .Show-list
-        %p#notice= notice
+    .Show-content
+      .Show-registration
+        %h1.User-title CoCoA
+        %h2.Show-title [くわしい ないよう]
+        .Show-list
+          %p#notice= notice
 
-        %p.show-text
-          %b タイトル:
-          = @event.title
-        %p.show-text
-          %b ないよう:
-          = @event.body
-        %p.show-text
-          %b はじまる日:
-          = @event.start_date
-        %p.show-text
-          %b おわる日:
-          = @event.end_date
+          %p.show-text
+            %b タイトル:
+            = @event.title
+          %p.show-text
+            %b ないよう:
+            = @event.body
+          %p.show-text
+            %b はじまる日:
+            = @event.start_date
+          %p.show-text
+            %b おわる日:
+            = @event.end_date
 
-        = link_to 'スケジュール変更（へんこう）', edit_event_path(@event)
-        \|
-        = link_to 'もどる', events_path
+          = link_to 'スケジュール変更（へんこう）', edit_event_path(@event)
+          \|
+          = link_to 'もどる', events_path
+      .Show-image
+        %h2.image-title 思い出の画像を挿入
 
 
     -# コメント実装

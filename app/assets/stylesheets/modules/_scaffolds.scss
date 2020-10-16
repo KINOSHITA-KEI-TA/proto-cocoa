@@ -23,15 +23,13 @@ pre {
 }
 
 a {
-  color: #000;
 
   &:visited {
     color: #666;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color:#ff6a00;
   }
 }
 
@@ -117,11 +115,19 @@ h1{
     margin-right: 20px;
     text-decoration: none;
   }
+  .New-event:hover {
+    border: solid 3px #ff6a00;
+    text-decoration:underline;
+  }
   .Out-event{
     border: solid 3px rgb(4, 121, 4);
     padding: 10px;
     margin: 0px 20px 0px 0px ;
     // background-color:  rgb(141, 197, 141);
+  }
+  .Out-event:hover {
+    border: solid 3px #ff6a00;
+    text-decoration:underline;
   }
   .Button-out{
     text-decoration: none;
