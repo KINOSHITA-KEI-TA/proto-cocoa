@@ -24,7 +24,13 @@
           \|
           = link_to 'もどる', events_path
       .Show-image
-        %h2.image-title 思い出の画像を挿入
+        %h2.image-title 【 思い出の写真 】
+        .Image
+          - if @comments
+            - @comments.each do |comment|
+              .Image__image-place
+                = image_tag comment.image.url, class: 'Comment_image' if comment.image.present?
+
 
 
     -# コメント実装
@@ -42,6 +48,7 @@
             .Form-comment__comment-content__temperature
               = form.label :temperature_id,"きょうのたいおん",class:'font'
               = form.collection_select :temperature_id,Temperature.all, :id, :name,class:"Form-comment__comment-content__temperature__temperature-box"
+            = form.file_field :image,class:"Form-comment__comment-content__comment-tag input-image"
             = form.text_area :text,class:"Form-comment__comment-content__comment-tag input-text", placeholder: "ないよう"
             = form.submit "書き込む",class:"Form-comment__comment-content__comment-btn"
       .Comment

@@ -5,6 +5,7 @@ class CreateComments < ActiveRecord::Migration[6.0]
       t.integer :event_id
       t.text :name,null: false
       t.integer :temperature_id
+      t.text :image
       t.text :text,null: false
       t.timestamps
     end
