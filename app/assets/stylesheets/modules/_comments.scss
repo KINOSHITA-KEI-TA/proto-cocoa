@@ -2,6 +2,9 @@
 .Show-body{
   height: 100%;
 }
+.Show-image{
+  padding: 15px;
+}
 .Show-content{
   display: flex;
   .Show-image{
@@ -75,7 +78,7 @@
 
 .Comment{
   padding: 20px 0px;
-  margin: 30px 0px 0px 20px;
+  margin: 30px 0px 0px 10px;
   &__comment-box{
     display: flex;
     flex-direction: column;
