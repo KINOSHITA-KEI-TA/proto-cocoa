@@ -16,7 +16,7 @@ Overview
   <li>ログイン機能</li>
   <li>スケジュール登録</li>
   <li>スケジュール編集</li>
-  <li>日記機能</li>
+  <li>日記機能（画像挿入可能）</li>
   <li>体温記入欄</li>
   <li>トップページの色変更</li>
 </ul>
@@ -37,7 +37,7 @@ Overview
 ## 今後実装したい機能
 <ul>
   <li>ユーザーごとの色変更を保存</li>
-  <li>Googleカレンダーと同期</li>
+  <li>ピンボールゲームの発生</li>
 </ul>
 
 
@@ -49,6 +49,9 @@ Overview
 
 ## デモ画像③
 ![CoCoA-comment](https://user-images.githubusercontent.com/67889594/96370628-76754f00-1199-11eb-8c62-78d878488059.png)
+
+## デモ動画（ユーザー登録画面）
+<a href="https://gyazo.com/c7ab7de265681ac0b9b38c13b65a0d4c"><img src="https://gyazo.com/c7ab7de265681ac0b9b38c13b65a0d4c.gif" alt="Image from Gyazo" width="1000"/></a>
 
 
 ## Licence
