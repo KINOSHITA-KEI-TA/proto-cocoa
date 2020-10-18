@@ -42,7 +42,7 @@ Overview
 
 
 ## デモ画像①
-![CoCoA-index-2](https://user-images.githubusercontent.com/67889594/94936492-470fe280-0509-11eb-8beb-3a401adf3aa3.jpg))
+![CoCoA-index-2](https://user-images.githubusercontent.com/67889594/94936492-470fe280-0509-11eb-8beb-3a401adf3aa3.jpg)
 
 ## デモ画像②
 ![CoCoA-tt](https://user-images.githubusercontent.com/67889594/94344301-44b90e80-0059-11eb-8a04-b766a9a68916.png)
