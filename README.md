@@ -48,7 +48,7 @@ Overview
 ![CoCoA-tt](https://user-images.githubusercontent.com/67889594/94344301-44b90e80-0059-11eb-8a04-b766a9a68916.png)
 
 ## デモ画像③
-![CoCoA-comment](https://user-images.githubusercontent.com/67889594/94344107-fc4d2100-0057-11eb-93bd-4d259462c29b.png)
+![CoCoA-comment](https://user-images.githubusercontent.com/67889594/96370628-76754f00-1199-11eb-8c62-78d878488059.png)
 
 
 ## Licence
@@ -89,6 +89,7 @@ Column|Type|Options|
 |name|text|null: false|
 |text|text|null: false|
 |temperature_id|references|null: false, foreign_key: true|
+|image|text|
 |user_id|integer|
 |event_id|integer|
 
