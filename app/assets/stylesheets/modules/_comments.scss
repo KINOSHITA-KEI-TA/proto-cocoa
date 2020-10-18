@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   &__comment-tag{
-    margin: 20px 10px 10px 20px ;
+    margin: 10px 10px 10px 20px ;
   }
   &__temperature{
     margin: 0px 0px 0px 20px;
@@ -63,7 +63,7 @@
   }
   .input-text{
     width: 40vw;
-    height: 35vh;
+    height: 30vh;
     padding: 10px;
   }
   #comment_temperature_id{

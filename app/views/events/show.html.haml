@@ -24,11 +24,11 @@
           \|
           = link_to 'もどる', events_path
       .Show-image
-        %h2.image-title 【 思い出の写真 】
         .Image
           - if @comments
             - @comments.each do |comment|
               .Image__image-place
+                %h2.image-title 【 思い出の写真 】
                 = image_tag comment.image.url, class: 'Comment_image' if comment.image.present?
 
 
