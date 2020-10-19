@@ -129,3 +129,9 @@ $('#calendar').fullCalendar({
     });
     
 });
+
+// $(function(){
+//     if (".Form-comment__comment-content__comment-btn")on('submit'){
+//       $(".Form-comment").remove()
+//     }
+// })
