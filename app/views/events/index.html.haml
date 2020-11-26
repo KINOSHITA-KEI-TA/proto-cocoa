@@ -37,6 +37,7 @@
 .Color-select
   .row.pt20
     .col-xs-12
+      -# = form_with(model:[@color],do |form|
       .form-group.radio-wrap.text-center
         %label.label-radio
           %input#green{name: "radio", type: "radio"}/
@@ -47,3 +48,4 @@
         %label.label-radio
           %input#black{name: "radio", type: "radio"}/
           %span.lever ブラック
+        = form.submit "変更",class:"color-btn"
